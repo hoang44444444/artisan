@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .hover-me {
+            color: blueviolet;
+        }
+
+        .hover-me:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .hover-me::after {
+            content: "yes";
+            display: none;
+        }
+
+        .hover-me:hover::after {
+            display: block;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="pic1">
+        <img src="Ellipse.png" alt="pic1">
+    </div>
+    <div class="lb1">
+        <label>Jane</label>
+    </div>
+    <div class="lb2">
+        <label>SAN FRANCISCO .CA</label>
+    </div>
+    <div>
+        <button class="btn1">FOLLOW JANE</button>
+    </div>
+    <div>
+        <button class="btn2">MESSAGE</button>
+    </div>
+    <div class="container-pic">
+        <div class="left">
+            <img class="pic2" src="Rectangle 2.png" alt="pic2">
+            <img class="pic3" src="Rectangle 2.2.png" alt="pic3">
+            <img class="pic4" src="Rectangle 2.1.png" alt="pic4">
+
+
+        </div>
+        <div class="right">
+            <img class="pic3" src="Rectangle 2.2.png" alt="pic3">
+            <img class="pic4" src="Rectangle 2.1.png" alt="pic4">
+            <img class="pic2" src="Rectangle 2.png" alt="pic2">
+        </div>
+    </div>
+
+    <h1 class="hover-me">HOVER ME</h1>
+</body>
+
+</html>
